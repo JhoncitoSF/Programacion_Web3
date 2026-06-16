@@ -1,0 +1,9 @@
+/* Captcha.css */
+.captcha { margin-bottom: 1.5rem; }
+.captcha__label { display: block; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #666; margin-bottom: 0.8rem; }
+.captcha__row { display: flex; gap: 0.8rem; align-items: center; }
+.captcha__pregunta { color: var(--gold); font-size: 0.9rem; font-family: var(--serif); min-width: 120px; }
+.captcha__input { background: #0f0f0f; border: 0.5px solid #333; color: #fff; padding: 0.6rem 0.8rem; font-size: 0.85rem; width: 80px; outline: none; transition: border-color 0.3s; }
+.captcha__input:focus { border-color: var(--gold); }
+.captcha__refresh { background: transparent; border: 0.5px solid #333; color: #666; cursor: pointer; padding: 0.5rem 0.8rem; font-size: 1rem; transition: all 0.3s; }
+.captcha__refresh:hover { border-color: var(--gold); color: var(--gold); }

@@ -1,0 +1,65 @@
+/* ProductDetail.css */
+.detail-page { background: var(--black); min-height: 100vh; padding: 2rem 4rem 6rem; }
+.detail-estado { color: var(--text-faint); text-align: center; padding: 8rem; font-size: 0.75rem; letter-spacing: 0.2em; }
+.detail-breadcrumb { display: flex; gap: 0.8rem; align-items: center; margin-bottom: 3rem; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; }
+.detail-breadcrumb__link { color: #333; cursor: pointer; transition: color 0.3s; }
+.detail-breadcrumb__link:hover { color: var(--gold); }
+.detail-breadcrumb__sep { color: #1c1c1c; }
+.detail-breadcrumb__current { color: var(--text-faint); }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
+
+/* Imagen */
+.detail-img-frame { height: 520px; background: var(--black-2); border: 0.5px solid var(--border); position: relative; overflow: hidden; }
+.detail-img-el { width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.85; }
+.detail-img-tag {
+  position: absolute; top: 0; right: 2rem; background: var(--gold);
+  color: var(--black); font-size: 0.55rem; letter-spacing: 0.2em;
+  text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.9rem; z-index: 2;
+}
+.detail-stock { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.7rem 1.2rem; margin-top: 1px; }
+.detail-stock--ok    { background: var(--success-bg); color: var(--success-color); }
+.detail-stock--warn  { background: #1a1200; color: #ff9800; }
+.detail-stock--empty { background: var(--error-bg); color: #ef5350; }
+
+/* Info */
+.detail-info { padding-top: 1rem; }
+.detail-eyebrow { font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 1rem; }
+.detail-titulo { font-family: var(--serif); font-size: 2.8rem; font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 1.5rem; }
+.detail-gold-line { width: 40px; height: 0.5px; background: var(--gold); margin-bottom: 1.8rem; }
+.detail-desc { font-size: 0.78rem; color: #555; line-height: 2.2; letter-spacing: 0.04em; margin-bottom: 2.5rem; }
+
+/* Specs */
+.detail-specs { border-top: 0.5px solid var(--border-dim); border-bottom: 0.5px solid var(--border-dim); padding: 1.5rem 0; margin-bottom: 2.5rem; }
+.detail-specs__title { font-size: 0.58rem; letter-spacing: 0.25em; text-transform: uppercase; color: #2a2a2a; margin-bottom: 1.2rem; }
+.detail-specs-table { width: 100%; border-collapse: collapse; }
+.detail-specs-table tr { border-bottom: 0.5px solid #0f0f0f; }
+.detail-specs-table td { padding: 0.55rem 0; }
+.detail-spec-key { color: #333; font-size: 0.7rem; letter-spacing: 0.08em; width: 40%; }
+.detail-spec-val { color: #666; font-size: 0.72rem; }
+
+/* Precio */
+.detail-precio-row { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2rem; }
+.detail-precio { font-family: var(--serif); font-size: 3rem; color: var(--gold); }
+.detail-precio-note { font-size: 0.62rem; color: #333; letter-spacing: 0.1em; }
+
+/* Cantidad */
+.detail-cantidad-row { display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; }
+.detail-cantidad-label { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #333; }
+.detail-cantidad-ctrl { display: flex; align-items: center; border: 0.5px solid var(--border); }
+.detail-cantidad-btn { background: transparent; border: none; color: #555; width: 36px; height: 36px; cursor: pointer; font-size: 1rem; transition: color 0.3s; }
+.detail-cantidad-btn:hover { color: var(--gold); }
+.detail-cantidad-val { color: #fff; font-size: 0.85rem; width: 36px; text-align: center; border-left: 0.5px solid var(--border); border-right: 0.5px solid var(--border); line-height: 36px; }
+
+/* Botón */
+.detail-btn-comprar {
+  width: 100%; background: var(--gold); border: none; color: var(--black);
+  font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+  font-weight: 700; padding: 1rem; cursor: pointer; transition: background 0.3s;
+  font-family: var(--sans);
+}
+.detail-btn-comprar:hover:not(:disabled) { background: var(--gold-light); }
+.detail-btn-comprar:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Garantías */
+.detail-garantias { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.detail-garantia-item { font-size: 0.62rem; color: #2a2a2a; letter-spacing: 0.08em; }

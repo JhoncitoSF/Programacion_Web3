@@ -1,0 +1,30 @@
+/* ============================================================
+   JazzProStudio — Variables globales y reset
+   Importar en main.jsx
+============================================================ */
+:root {
+  --gold:       #D4AF37;
+  --gold-light: #E8C84A;
+  --gold-dim:   #9A7D22;
+  --black:      #050505;
+  --black-2:    #0A0A0A;
+  --black-3:    #111111;
+  --black-4:    #1A1A1A;
+  --text-muted: #666666;
+  --text-faint: #444444;
+  --text-dim:   #333333;
+  --border:     #1c1c1c;
+  --border-dim: #111111;
+  --serif:      'Georgia', serif;
+  --sans:       'Segoe UI', Arial, sans-serif;
+  --error-bg:   #1a0808;
+  --error-border: #5a1a1a;
+  --error-text: #e57373;
+  --success-bg: #0d1a0d;
+  --success-color: #4caf50;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--black); color: #fff; font-family: var(--sans); font-weight: 300; }
+a { text-decoration: none; }
+button { font-family: var(--sans); }

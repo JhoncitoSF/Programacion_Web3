@@ -1,0 +1,36 @@
+/* MisPedidos.css */
+.pedidos-page { background: var(--black); min-height: 100vh; padding: 3rem 4rem; }
+.pedidos-header { margin-bottom: 3rem; }
+.pedidos-eyebrow { font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.8rem; }
+.pedidos-titulo { font-family: var(--serif); font-size: 2.5rem; font-weight: 300; color: #fff; margin: 0; }
+.pedidos-loading { color: #555; text-align: center; padding: 8rem; font-size: 0.75rem; letter-spacing: 0.2em; }
+.pedidos-vacio { border: 0.5px solid var(--border-dim); padding: 5rem; text-align: center; background: var(--black-2); }
+.pedidos-vacio__icon { font-family: var(--serif); font-size: 3rem; color: #1c1c1c; margin-bottom: 1.5rem; }
+.pedidos-vacio__titulo { font-family: var(--serif); font-size: 1.6rem; font-weight: 300; color: #333; margin-bottom: 1rem; }
+.pedidos-vacio__desc { font-size: 0.75rem; color: var(--text-faint); line-height: 2; margin-bottom: 2rem; }
+.pedidos-vacio__btn { background: var(--gold); border: none; color: var(--black); font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; padding: 0.85rem 2rem; cursor: pointer; font-family: var(--sans); }
+.pedidos-lista { display: flex; flex-direction: column; gap: 1px; background: var(--border-dim); }
+.pedidos-card { background: var(--black-2); }
+.pedidos-card__header { display: flex; align-items: center; padding: 1.5rem 2rem; cursor: pointer; gap: 2rem; transition: background 0.2s; }
+.pedidos-card__header:hover { background: #0f0f0f; }
+.pedidos-card__left { flex: 1; }
+.pedidos-card__num { font-size: 0.82rem; color: #ccc; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
+.pedidos-card__fecha { font-size: 0.62rem; color: var(--text-faint); letter-spacing: 0.08em; }
+.pedidos-card__total { font-family: var(--serif); font-size: 1.3rem; color: var(--gold); }
+.pedidos-card__chevron { font-size: 0.6rem; color: #333; }
+.pedidos-estado { font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.25rem 0.8rem; }
+.pedidos-estado--pagado   { background: var(--success-bg); color: var(--success-color); }
+.pedidos-estado--pendiente{ background: #1a1200; color: #ff9800; }
+.pedidos-estado--cancelado{ background: var(--error-bg); color: #ef5350; }
+.pedidos-estado--enviado  { background: #0d0d1a; color: #7c8cf8; }
+.pedidos-detalle { border-top: 0.5px solid var(--border-dim); padding: 1.5rem 2rem; background: #080808; }
+.pedidos-detalle-header { display: grid; grid-template-columns: 2fr 1fr 0.5fr 1fr 1fr; gap: 1rem; margin-bottom: 0.8rem; }
+.pedidos-detalle-th { font-size: 0.55rem; letter-spacing: 0.18em; text-transform: uppercase; color: #333; }
+.pedidos-detalle-fila { display: grid; grid-template-columns: 2fr 1fr 0.5fr 1fr 1fr; gap: 1rem; padding: 0.6rem 0; border-bottom: 0.5px solid #0f0f0f; }
+.pedidos-detalle-td { font-size: 0.72rem; color: #555; }
+.pedidos-detalle-nombre { color: #ccc; font-size: 0.75rem; }
+.pedidos-detalle-subtotal { color: var(--gold); font-size: 0.75rem; }
+.pedidos-detalle-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1.2rem; }
+.pedidos-detalle-count { font-size: 0.65rem; color: #555; letter-spacing: 0.1em; }
+.pedidos-btn-pdf { background: transparent; border: 0.5px solid var(--gold); color: var(--gold); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.5rem 1.2rem; cursor: pointer; font-family: var(--sans); transition: all 0.3s; }
+.pedidos-btn-pdf:hover { background: var(--gold); color: var(--black); }
