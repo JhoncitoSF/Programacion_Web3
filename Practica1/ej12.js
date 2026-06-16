@@ -16,18 +16,15 @@ function paso3(cb) {
     cb();
   }, 1000);
 }
-/* Anidamiento de callbacks
+// Anidamiento de callbacks
 paso1(() => {
   paso2(() => {
     paso3(() => {
       console.log("Terminado");
     });
   });
-});*/
+});
 
-
-//---------------------------------------------------------------------------------------------------------------------------
-//Con con async/await
 function paso1() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -51,8 +48,7 @@ function paso3() {
       resolve();
     }, 1000);
   });
-}
-
+}+
 async function ejecutar() {
   await paso1();
   await paso2();

@@ -14,16 +14,11 @@ function paso2() {
     }, 1000);
   });
 }
-
 paso1()
   .then(() => paso2())
   .then(() => console.log("Terminado"));
 
-
-
-
-//con async/await
-
+//con async/awai
 function paso1() {
   return new Promise((resolve) => {
     setTimeout(() => {
